@@ -1,2 +1,2 @@
-Hello I am using Nano!
+clearHello I am using Nano!
 
