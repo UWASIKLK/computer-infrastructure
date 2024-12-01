@@ -1,0 +1,11 @@
+--2024-12-01 13:57:39--  https://prodapi.metweb.ie/observations/athenry/today
+Resolving prodapi.metweb.ie (prodapi.metweb.ie)... 139.162.185.91
+Connecting to prodapi.metweb.ie (prodapi.metweb.ie)|139.162.185.91|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/json]
+Saving to: ‘today.2’
+
+     0K ....                                                    509M=0s
+
+2024-12-01 13:57:46 (509 MB/s) - ‘today.2’ saved [4245]
+
