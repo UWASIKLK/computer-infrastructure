@@ -1,0 +1,47 @@
+name: Run Weather Script and Push Changes
+
+on:
+# runs daily at 10:00 AM UTC
+  schedule:  
+    - cron: '0 10 * * *'
+# allow manual triggering of the workflow
+  workflow_dispatch:
+
+permissions:
+  contents: write # grant write permissions to push changes
+
+jobs:
+run-and-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Check out the repository
+    - name: Checkout repository
+      uses: actions/checkout@v4 # clone the repository
+      with:
+        persist-credentials: true # ensures credentials are available for pushing changes
+
+    # Step 2: Set up Python
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    # Step 3: Install dependencies
+    - name: Install required dependencies
+      run: pip install -r requirements.txt
+
+    # Step 4: Run the script
+    - name: Run weather.sh script
+      run: ./weather.sh
+
+    # Step 5: Commit and push changes back to the repository
+    - name: Commit and push changes
+ run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add .
+        git commit -m "Automated update by weather.sh script" || echo "No changes to commit"
+        git push origin HEAD:main
+env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # authenticated token to push changes
