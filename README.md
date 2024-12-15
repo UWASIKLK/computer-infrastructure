@@ -9,14 +9,14 @@ forecast.
 
 The purpose of the assessment of this module is to demonstrate competence in the following areas:
 
-1.	 Use, configure, and script in a command line interface environment.
+1.	Use, configure, and script in a command line interface environment.
 2.	Manipulate and move data and code using the command line.
 3.	Compare commonly available software infrastructures and architectures.
 4.	Select appropriate infrastructure for a given computational task.
 
  ## Get Started
 
- To get started with this project, you will need to download the necessary software/application in case you don't 
+To get started with this project, you will need to download the necessary software/application in case you don't 
 have it:
 
  - **[Anaconda](https://www.anaconda.com/)** - it is a platform which is used to share a code design for machine 
@@ -32,7 +32,7 @@ track any change you make in GitHub.
 
  ## GitHub Codespaces
 
- GitHub Codespaces is a cloud-based development environment that allows a user to code from any device with 
+GitHub Codespaces is a cloud-based development environment that allows a user to code from any device with 
 internet access. To start using codespaces, you'll need to have a personal GitHub account, which has a monthly 
 quota of free use of GitHub code spaces. The codespace can be created directly from your GitHub repository or 
 you can select an existing template. 
@@ -82,6 +82,14 @@ summarize the data.
 
 ## Project
 
+In this project, I automated weather.sh script using GitHub Actions with the following workflow:
+
+-	Run the script every day at 10:00 UTC and include workflow_dispatch
+-	Use the Ubuntu Linux Virtual Machine
+-	Clone a repository
+-	Execute weather.sh
+-	Commit and push weather data back to the repository
+
 ## Getting Help
 
 If you have any difficulties or questions, please feel free to contact me.
@@ -93,19 +101,16 @@ improvements.
 
 ## References:
 
-[How to Create Directory in Linux | mkdir Command - GeeksforGeeks](https://www.geeksforgeeks.org/
-mkdir-command-in-linux-with-examples/) (Task 1)
+[How to Create Directory in Linux | mkdir Command - GeeksforGeeks](https://www.geeksforgeeks.org/mkdir-command-in-linux-with-examples/) (Task 1)
 
 [Linux Date Command: Set, Change, Format and Display Date](https://phoenixnap.com/kb/linux-date-command) (Task 3)
 
 [Guide to Linux wget Command With Examples | Baeldung on Linux](https://www.baeldung.com/linux/wget-examples) 
 (Task 5)
 
-[Bash Scripting Tutorial: How to Write a Bash Script - LinuxConfig](https://linuxconfig.org/
-bash-scripting-tutorial) (Task 7)
+[Bash Scripting Tutorial: How to Write a Bash Script - LinuxConfig](https://linuxconfig.org/bash-scripting-tutorial) (Task 7)
 
-[Bash Scripting - Introduction to Bash and Bash Scripting - GeeksforGeeks](https://www.geeksforgeeks.org/
-bash-scripting-introduction-to-bash-and-bash-scripting/) (Task 7)
+[Bash Scripting - Introduction to Bash and Bash Scripting - GeeksforGeeks](https://www.geeksforgeeks.org/bash-scripting-introduction-to-bash-and-bash-scripting/) (Task 7)
 
 ## Author
 
