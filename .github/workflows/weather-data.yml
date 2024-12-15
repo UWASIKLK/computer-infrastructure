@@ -35,13 +35,13 @@ jobs:
     - name: Run weather.sh script
       run: ./weather.sh
 
-    # Step 5: Commit and push changes back to the repository
-    - name: Commit and push changes
-      run: |
+     # Step 5: Commit and push changes back to the repository
+     - name: Commit and push changes
+       env:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # authenticated token to push changes
+       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git add .
-        git commit -m "Automated update by weather.sh script" || echo "No changes to commit"
-        git push origin HEAD:main
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # authenticated token to push changes
+        git commit -m "Automated changes by weather.sh script" || echo "No changes to commit"
+        git push origin main
