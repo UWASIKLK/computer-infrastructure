@@ -14,7 +14,7 @@ The purpose of the assessment of this module is to demonstrate competence in the
 3.	Compare commonly available software infrastructures and architectures.
 4.	Select appropriate infrastructure for a given computational task.
 
- ## Get Started
+## Getting Started
 
 To get started with this project, you will need to download the necessary software/application in case you don't 
 have it:
@@ -30,27 +30,65 @@ environment (IDE) designed by Microsoft which can be used for writing, editing, 
 their code. Git is open source and free to use control system which GitHub uses for small and large project to 
 track any change you make in GitHub.
 
- ## GitHub Codespaces
+<ins>The Jupyter notebook can launched using two options:</ins>
+
+- **Option 1:**&emsp;&emsp;your local device
+- **Option 2:**&emsp;&emsp;GiHub Codespaces
+
+## Option 1
+
+To execute a Jupyter Notebook from a GitHub repository on your local machine using Visual Studio Code (VS Code) or Anaconda, follow these steps:
+
+### Clone the GitHub Repository
+
+Open a terminal or command prompt, navigate and execute:
+
+`git clone https://github.com/UWASIKLK/computer-infrastructure.git`
+
+### Set Up the Python Environment
+
+- **Anaconda Environment:** Open Anaconda Navigator, navigate to the 'Environments' tab, and create a new environment with the required Python version.
+- **Install Dependencies:** Use the terminal to navigate to the cloned repository's directory and execute:
+
+`conda install --file requirements.txt`
+
+This installs the necessary packages listed in requirements.txt.
+
+### Open notebook in Visual Studio Code (VS)
+
+- **Launch VS Code:** Open VS Code and use the 'Open Folder' option to navigate to the cloned repository.
+- **Open Notebook:** Locate the .ipynb file within the repository and open it.
+- **Select Python Interpreter:** Press `Ctrl+Shift+P (or Cmd+Shift+P on macOS)`, type `Python: Select Interpreter`, and choose the Anaconda environment you set up earlier.
+- **Select Jupyter Kernel:** Click on the kernel picker in the top-right corner of the notebook and select the appropriate kernel associated with your Anaconda environment.
+
+### Execute the Notebook
+
+To run cells use the run button next to each cell or execute all cells sequentially to run the notebook.
+
+Useful information can be found: [VS - Jupyter Notebook](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
+
+## Option 2
 
 GitHub Codespaces is a cloud-based development environment that allows a user to code from any device with 
 internet access. To start using codespaces, you'll need to have a personal GitHub account, which has a monthly 
 quota of free use of GitHub code spaces. The codespace can be created directly from your GitHub repository or 
 you can select an existing template. 
 
- ### Create GitHub Codespaces:
+### Create GitHub Codespaces:
 
--	Clone the repository by using following link: `https://github.com/UWASIKLK/computer-infrastructure`
+-	Clone the repository by using following link: `https://github.com/UWASIKLK/computer-infrastructure.git`
 -	Navigate to your GitHub repository
--	Click on the green `<>Code` button on the right top side
+-	Click on the green `<>Code` button on the right top side and select `Codespaces`
 -	Select `Create codespace on main`
 
 ![Codespaces](./img/Codespaces.png)
 
 
 The contents of your repository will immediately load into the online version of Visual Studio Code in your 
-browser, and you can start writing your code. It will have all the tools that Visual Studio Code provides. 
+browser, and you can start writing your code. <br>
+After development, commit and push your changes back to the repository directly from the codespace.
 
-More information can be found on: **[GitHub Docs](https://docs.github.com/en/codespaces/overview)**
+More information can be found on: [GitHub Docs](https://docs.github.com/en/codespaces/overview)
 
 ## Tasks Summary
 
